@@ -1,0 +1,148 @@
+<!DOCTYPE html> 
+<html lang="DE-de">
+<head>
+    <meta charset="UTF-8"> 
+    <!-- Dieser Kommentar wird nicht gerendert ist aber dennoch Sichtbar im Quellcode -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Einführung in die Web-Entwicklung</h1>
+    <h2>Etwas kleiner</h2>
+    ...
+    <h6>kleinste überschrift</h6>
+    <p id="formatierung">
+        Dies ist ein Absatz in einem HTML-Dokument. HTML steht für HyperText Markup Language und wird verwendet, um Webseiten zu strukturieren und Inhalte darzustellen.
+    </p>
+    <article>
+        <h2>Artikel Überschrift</h2>
+        <p>Dies ist ein Artikel innerhalb des Dokuments. Artikel sind eigenständige Inhalte, die in einem HTML-Dokument verwendet werden können.</p>
+    </article>
+    <nav>
+        <ul>
+            <li>Listen Element 1</li>
+            <li>Listen Element 2</li>
+            <li>Listen Element 3</li>
+            <li><a href="https://www.google.com">Google</a></li>
+        </ul>
+
+        <a href="seite2.html">Seite 2</a>
+    </nav>
+    <p>Das ist ein weiterer Absatz.<br>
+       Hallo Welt!
+    </p>
+
+    <pre>
+        Wenn ich code schreibe kann ich ihn so formatieren wie ich möchte.
+        mit pre tags bleibt die formatierung erhalten.
+        z.B. Zeilenumbrüche          und      Abstände
+        &lt;br&gt;
+        <code>
+            function halloWelt() {
+                console.log("Hallo Welt!");
+            }
+        </code>
+    </pre>
+
+    <blockquote>
+        Dies ist ein Zitat. Zitate werden verwendet, um Text hervorzuheben, der von einer anderen Quelle stammt.
+    </blockquote>
+
+    <form action="./seite2.html" method="post">
+        <fieldset>
+            <legend >Benutzerinformationen</legend>
+            <br><br>
+            <label for="name" class="cssklasse1">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+            <label for="email" class="cssklasse1">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            <label for="password" class="cssklasse1">Passwort:</label>
+            <input type="password" id="password" name="password" required>
+            <br><br>
+            <label for="phone">Telefonnummer:</label>
+            <input type="tel" id="phone" name="phone">
+            <br><br>
+            <label for="url">Website:</label>
+            <input type="url" id="url" name="url">
+            <br><br>
+            <label for="date">Geburtsdatum:</label>
+            <input type="date" id="date" name="date">
+            <br><br>
+            <label for="time">Uhrzeit:</label>
+            <input type="time" id="time" name="time">
+            <br><br>
+            <label for="termin">Termin:</label>
+            <input type="datetime-local" id="termin" name="termin">
+            <br><br>
+            <label for="month">Monat:</label>
+            <input type="month" id="month" name="month">
+            <br><br>
+            <label for="week">Woche:</label>
+            <input type="week" id="week" name="week">
+            <br><br>
+            <label for="zahl">Zahlen:</label>
+            <input type="number" id="zahl" name="zahl">
+            <br><br>
+            <label for="bereich">Bereich:</label>
+            <input type="range" id="bereich" name="bereich" min="0" max="100">
+            <br><br>
+            <label for="color">Color</label>
+            <input type="color" id="color" name="color">
+            <br><br>
+            <label>Geschlecht:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Männlich</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Weiblich</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Andere</label>
+            <br><br>
+            <label for="hobbies">Hobbys:</label>
+            <input type="checkbox" id="sports" name="hobbies" value="sports">
+            <label for="sports">Sport</label>
+            <input type="checkbox" id="music" name="hobbies" value="music">
+            <label for="music">Musik</label>
+            <input type="checkbox" id="reading" name="hobbies" value="reading">
+            <label for="reading">Lesen</label>
+            <br><br>
+            <label for="country">Land:</label>
+            <select id="country" name="country">
+                <option value="de">Deutschland</option>
+                <option value="at">Österreich</option>
+                <option value="ch">Schweiz</option>
+                <option value="us">USA</option>
+            </select>
+            <br><br>
+            <label for="textarea">Nachricht:</label>
+            <textarea id="textarea" name="textarea" rows="2" cols="10" ></textarea>
+            <br><br>
+            <label for="hidden">Versteckt</label>
+            <input type="hidden" id="hidden" name="hidden" value="versteckterWert">
+        
+            <br><br>
+            <input type="submit" value="Senden">
+            <input type="reset" value="Zurücksetzen">
+        </fieldset>
+    </form>
+    <figure>
+        <img src="./test.jpg" alt="Bild eines Computers">
+        <figcaption>Abbildung 1: Ein Computer</figcaption>
+    </figure>
+    <figure>
+        <audio src="./audio.ogg" type="audio/ogg" controls></audio>
+        <figcaption>ein Audioplayer</figcaption>
+    </figure>
+    <figure>
+        <video src="./video.mp4" type="video/mp4" width="300px" controls></video>
+        <figcaption>ein Videoplayer</figcaption>
+    </figure>
+    <p>Das ist <span style="color: red; font-weight: 900;">ein teilgestylter</span> Text</p>
+
+    <div class="meinCoolesdiv">Ich bin nur so hoch wie mein inhalt aber so Breit wie ich kann</div>
+    <section></section>
+    <footer></footer>    
+</body>
+</html>

@@ -1,0 +1,33 @@
+
+    body{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    body {
+        font-family: monospace, Arial, sans-serif;
+        background-color: rgb(34, 34, 41);
+        color: white;
+        
+    }
+    #formatierung {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .cssklasse1 {
+        font-weight: bold;
+        color: blue;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .meinCoolesdiv {
+        border: white solid 3px;
+        border-radius: 5px;
+        padding: 10px;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        
+        
+    }

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechShop - Online Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">TechShop</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Produkte</a></li>
+                        <li><a href="#about">Über uns</a></li>
+                    </ul>
+                </nav>
+                <div class="cart-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <span class="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Willkommen bei TechShop</h2>
+                <p>Entdecken Sie die neuesten Tech-Produkte</p>
+            </div>
+        </section>
+
+        <section id="products" class="products-section">
+            <div class="container">
+                <h2>Unsere Produkte</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-category="all">Alle</button>
+                    <button class="filter-btn" data-category="laptops">Laptops</button>
+                    <button class="filter-btn" data-category="phones">Smartphones</button>
+                    <button class="filter-btn" data-category="accessories">Zubehör</button>
+                </div>
+                <div class="products-grid" id="productsGrid">
+                    <!-- Produkte werden dynamisch über JavaScript eingefügt -->
+                </div>
+            </div>
+        </section>
+
+        <section class="cart-sidebar" id="cartSidebar">
+            <div class="cart-header">
+                <h3>Warenkorb</h3>
+                <button class="close-cart" id="closeCart">&times;</button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <!-- Warenkorb-Items werden hier eingefügt -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Gesamt:</span>
+                    <span id="cartTotal">0,00 €</span>
+                </div>
+                <button class="checkout-btn">Zur Kasse</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 TechShop. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
