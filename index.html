@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,46 +8,127 @@
 <body>
     <h1>Unterricht</h1>
     <h2>Visual Studio Code</h2>
-    <p>Umgang mit Visual Studio Code kurz durchgesprochen</p>
+    <p>Umgang mit Visual Studio Code kurz durchgesprochen.</p>
+
     <h2>Inline Suggestions</h2>
-    <p>Inline suggestions aktiviert. Das geht ganz einfach in dem
-        man in die Einstellungen geht (Strg + ,) und dort nach "Inline Suggestions" sucht. Dort kann man die Funktion aktivieren oder deaktivieren.</p>
-        <h2>Erster HTML-Code</h2>
-        <p>Mit <code>&lt;!DOCTYPE html&gt;</code> wird automatisch der HTML5-Standard verwendet.</p>
-        <p>Mit <code>&lt;html lang="en"&gt;</code> wird die Sprache der Seite auf Englisch gesetzt. </p>
-        <p>Mit <code>&lt;head&gt;</code> werden Metadaten der Seite definiert, wie z.B. der Titel und die Zeichencodierung.</p>
-        <p>Mit <code>&lt;meta charset="UTF-8"&gt;</code> wird die Zeichencodierung auf UTF-8 gesetzt, was die meisten Zeichen unterstützt.</p>
-        <p>Mit <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code> wird die Seite für mobile Geräte optimiert.</p>
-        <p>Mit <code>&lt;title&gt;</code> wird der Titel der Seite festgelegt, der im Browser-Tab angezeigt wird.</p>
-        <p>Mit <code>&lt;body&gt;</code> wird der Hauptinhalt der Seite definiert.</p>
-        <p>Dann habe ich noch herausgefunden dass man mit <code>&lt;/b&gt;</code> den Text fett formatieren kann.</p>
+    <p>Inline Suggestions aktiviert. Das geht in den Einstellungen (Strg + ,) unter "Inline Suggestions"; dort lässt sich die Funktion ein- oder ausschalten.</p>
+
+    <h2>Erster HTML-Code</h2>
+    <p>Mit <code>&lt;!DOCTYPE html&gt;</code> wird der Browser angewiesen, die Seite als HTML5 zu interpretieren.</p>
+    <p>Mit <code>&lt;html lang="de"&gt;</code> wird die Sprache der Seite auf Deutsch gesetzt. Das ist wichtig für Suchmaschinen und Screenreader.</p>
+    <p>Mit <code>&lt;head&gt;</code> werden Metadaten der Seite definiert, wie z. B. Titel und Zeichencodierung.</p>
+    <p>Mit <code>&lt;meta charset="UTF-8"&gt;</code> wird die Zeichencodierung auf UTF-8 gesetzt, was die meisten Zeichen unterstützt.</p>
+    <p>Mit <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code> wird die Seite für mobile Geräte optimiert.</p>
+    <p>Mit <code>&lt;title&gt;</code> wird der Titel der Seite festgelegt, der im Browser-Tab angezeigt wird.</p>
+    <p>Der sichtbare Hauptinhalt gehört in das <code>&lt;body&gt;</code>-Element.</p>
+    <p>Zum Fettsetzen von Text verwendet man <code>&lt;b&gt;fetter Text&lt;/b&gt;</code> oder semantisch besser <code>&lt;strong&gt;wichtiger Text&lt;/strong&gt;</code>. Die Schreibweise <code>&lt;/b&gt;</code> allein ist falsch (fehlendes öffnendes Tag).</p>
+
     <h2>Extensions</h2>
-    <p>Lehrer erklärt wie man Extensions installiert. Dazu geht man in den Extensions Tab (das Symbol mit den vier Quadraten auf der linken Seite) und sucht nach der gewünschten Extension. Dann klickt man auf "Installieren". Wir haben uns heute die Extensions GitHub Theme als beispiel angeschaut und installiert.</p>
-</body>
-<body>
+    <p>Extensions installiert man über den Extensions-Tab (Symbol links). Suche die gewünschte Extension und klicke auf "Installieren". Beispiel: "GitHub Theme".</p>
+
+    <h2>HTML-Tags</h2>
+    <p>Überschriften:</p>
+    <ul>
+        <li><code>&lt;h1&gt;</code> für die Hauptüberschrift</li>
+        <li><code>&lt;h2&gt;</code> für Unterüberschriften</li>
+        <li><code>&lt;h3&gt;</code> für weitere Unterüberschriften</li>
+        <li><code>&lt;h4&gt;</code> bis <code>&lt;h6&gt;</code> für noch tiefere Ebenen</li>
+    </ul>
+
+    <p>Listen:</p>
+    <ul>
+        <li><code>&lt;ul&gt;</code> für ungeordnete Listen (Punkte)</li>
+        <li><code>&lt;ol&gt;</code> für geordnete Listen (Nummern)</li>
+        <li><code>&lt;li&gt;</code> für Listenelemente</li>
+    </ul>
+
+    <p>Absätze und Hervorhebungen:</p>
+    <ul>
+        <li><code>&lt;p&gt;</code> für Absätze</li>
+        <li><code>&lt;b&gt;</code> und <code>&lt;strong&gt;</code> für fett</li>
+        <li><code>&lt;i&gt;</code> und <code>&lt;em&gt;</code> für kursiv</li>
+    </ul>
+
+    <p>Struktur-Tags:</p>
+    <ul>
+        <li><code>&lt;article&gt;</code> für eigenständige Inhalte</li>
+        <li><code>&lt;nav&gt;</code> für Navigationslinks</li>
+        <li><code>&lt;section&gt;</code> für thematische Abschnitte</li>
+        <li><code>&lt;header&gt;</code> für Kopfbereiche</li>
+        <li><code>&lt;footer&gt;</code> für Fußzeilen</li>
+    </ul>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <p>Links Beispiele:</p>
+    <ul>
+        <li><code>&lt;a href="https://example.com"&gt;Linktext&lt;/a&gt;</code> — so erstellt man einen Hyperlink.</li>
+    </ul>
+
+    <p>Sonstiges:</p>
+    <ul>
+        <li><code>&lt;br&gt;</code> für Zeilenumbrüche (sparsam verwenden)</li>
+        <li><code>&lt;pre&gt;</code> für vorformatierte Texte</li>
+        <li><code>&lt;blockquote&gt;</code> für längere Zitate</li>
+    </ul>
+
+    <h2>Formulare</h2>
+    <p>Ein korrektes Formular-Beispiel:</p>
+    <pre><code>&lt;form action="/submit" method="post"&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;
+    &lt;input type="submit" value="Absenden"&gt;
+&lt;/form&gt;</code></pre>
+    <p>Allgemeine Hinweise:</p>
+    <ul>
+        <li><code>action</code> gibt die URL an, an die das Formular gesendet wird (z. B. <code>"/submit"</code>).</li>
+        <li><code>method</code> ist üblicherweise <code>"get"</code> oder <code>"post"</code>.</li>
+        <li><code>&lt;label for="id"&gt;</code> verbindet das Label mit einem Eingabefeld via dessen <code>id</code>.</li>
+        <li><code>&lt;fieldset&gt;</code> und <code>&lt;legend&gt;</code> gruppieren Formularfelder.</li>
+    </ul>
+
+    <h2>Beispiel Formular</h2>
+    <fieldset>
+        <legend>Beispiel Formular</legend>
+        <form action="/submit" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <input type="submit" value="Absenden">
+        </form>
+    </fieldset>
+
     <h1>Persönliche Ideen</h1>
     <h2>Eine Website für Streiter Motorsport</h2>
-    <p> Nachdem ich jetzt eine Software für Streiter Motorsport entwickelt habe, möchte ich eine Website erstellen, die alle Informationen über das Team und seine Leistungen enthält.</p>
-    <h3>Website Inhalt</h3>
+    <p>Nachdem ich eine Software für Streiter Motorsport entwickelt habe, möchte ich eine Website erstellen, die Informationen über das Team und seine Leistungen enthält.</p>
+    <h3>Website-Inhalte</h3>
     <ul>
-        <li><b>Teamvorstellung</b>: Informationen über die Mitglieder des Teams, ihre Rollen und Erfahrungen.</li>
-        <li><b>Rennkalender</b>: Eine Übersicht über die bevorstehenden Rennen und Veranstaltungen, an denen das Team teilnimmt.</li>
-        <li><b>Ergebnisse</b>: Eine Seite, auf der die Ergebnisse der vergangenen Rennen angezeigt werden, einschließlich Platzierungen und Zeiten.</li>
-        <li><b>Galerie</b>: Eine Sammlung von Fotos und Videos von Rennen, Teamaktivitäten und Fahrzeugen.</li>
-        <li><b>Kontaktseite</b>: Ein Formular oder Kontaktinformationen, damit Fans und Interessierte das Team erreichen können.</li>
-</ul>
-<h3>Backend</h3>
-<p>Ich könnte in C# APIs erstellen, um die Daten für die Website zu verwalten und zu speichern.</p>
-<p>In einer Datenbank könnten Setups und Teaminterne Informationen gespeichert und über die Website abgerufen werden.</p>
-<h2>Persönliche SimRacing Website</h2>
-    <p>Ich möchte eine persönliche SimRacing Website erstellen, um meine Leidenschaft für den virtuellen Rennsport zu teilen und meine Fortschritte zu dokumentieren.</p>
-    <h3>Website Inhalt</h3>
-        <p>Die Website könnte folgende Abschnitte enthalten:</p>
-        <ul>
-            <li><b>Über mich</b>: Eine kurze Vorstellung meiner Person, meiner SimRacing-Erfahrungen und meiner Ziele im virtuellen Rennsport.</li>
-            <li><b>Rennberichte</b>: Detaillierte Berichte über meine Rennen, einschließlich meiner Leistungen, Herausforderungen und Highlights.</li>
-            <li><b>Setup-Tipps</b>: Eine Sammlung von Tipps und Tricks zur Optimierung von Fahrzeug-Setups für verschiedene Rennstrecken und Fahrzeuge.</li>
-            <li><b>Galerie</b>: Eine Auswahl von Screenshots und Videos meiner besten Rennen und Momente im SimRacing.</li>
-            <li><b>Blog</b>: Regelmäßige Updates über meine Fortschritte, neue Erfahrungen und Gedanken zum SimRacing.</li>
+        <li><strong>Fahreraufstellung pro Event</strong></li>
+        <li><strong>Teamvorstellung</strong>: Informationen über Mitglieder, Rollen und Erfahrungen.</li>
+        <li><strong>Rennkalender</strong>: Übersicht über kommende Rennen.</li>
+        <li><strong>Ergebnisse</strong>: Ergebnisse vergangener Rennen mit Platzierungen und Zeiten.</li>
+        <li><strong>Galerie</strong>: Fotos und Videos von Rennen und Fahrzeugen.</li>
+        <li><strong>Kontaktseite</strong>: Formular oder Kontaktinformationen für Fans und Interessierte.</li>
+    </ul>
+
+    <h3>Backend</h3>
+    <p>Als Backend könnten C#-APIs verwendet werden, um Daten (Setups, Teaminfos) zu speichern und bereitzustellen.</p>
+
+    <h2>Persönliche Website</h2>
+    <p>Ich plane eine persönliche SimRacing-Website zur Dokumentation meiner Fortschritte.</p>
+    <h3>Inhalte</h3>
+    <ul>
+        <li><strong>Über mich</strong></li>
+        <li><strong>Rennberichte</strong></li>
+        <li><strong>Setup-Tipps</strong></li>
+        <li><strong>Galerie</strong></li>
+        <li><strong>Blog</strong></li>
+    </ul>
+
 </body>
 </html>
